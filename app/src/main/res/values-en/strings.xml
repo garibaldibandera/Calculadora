@@ -4,6 +4,6 @@
     <string name="titulo">CALCULATOR</string>
     <string name="numero_uno">Number One</string>
     <string name="numero_dos">Nomber Two</string>
-    <string name="boncalcular">Calculate</string>
-    <string name="bonborrar">Clear</string>
+    <string name="btncalcular">Clculate</string>
+    <string name="btnborrar">Clear</string>
 </resources>

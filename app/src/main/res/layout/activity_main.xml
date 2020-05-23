@@ -32,19 +32,26 @@
         android:hint="Número Dos"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/btnSumar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="Calcular"
-        android:text="Calcular" />
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnBorrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="aux_limpiar"
-        android:text="Borrar" />
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:onClick="Calcular"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="aux_limpiar"
+            android:text="Borrar" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/lblResultado"

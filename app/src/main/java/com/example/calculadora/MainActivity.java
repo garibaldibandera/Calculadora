@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Calcular(View v) {
-        int num_uno, num_dos, resultados;
+        int num_uno, num_dos, resultados = 0;
         //String Operador1 = numero_uno.getText().toString();
         //String Operador2 = numero_dos.getText().toString();
         String opcion = Operacion.getSelectedItem().toString();
@@ -43,25 +43,25 @@ public class MainActivity extends AppCompatActivity {
         if (validar()) {
             num_uno = Integer.parseInt(numero_uno.getText().toString());
             num_dos = Integer.parseInt(numero_dos.getText().toString());
-            resultados = num_uno + num_dos;
+           // resultados = num_uno + num_dos;
 
             if (opcion.equals("Sumar")) {
                 resultados = num_uno + num_dos;
-                resultado.setText("" + resultados);
+               // resultado.setText("" + resultados);
             } else if (opcion.equals("Restar")) {
                 resultados = num_uno - num_dos;
-                resultado.setText("" + resultados);
+               // resultado.setText("" + resultados);
             } else if (opcion.equals("Multiplicar")) {
                 resultados = num_uno * num_dos;
-                resultado.setText("" + resultados);
+                //resultado.setText("" + resultados);
             } else if (num_dos != 0) {
                 resultados = num_uno / num_dos;
-                resultado.setText("" + resultados);
+                //resultado.setText("" + resultados);
             } else {
                 Toast.makeText(this, "EL DIVISOR DEBE SER DIFERENTE A CERO 0.", Toast.LENGTH_LONG).show();
                 //mensajes.setText("EL DIVISOR DEBE SER DIFERENTE A CERO 0");
             }
-
+            resultado.setText("" + resultados);
         }
     }
 

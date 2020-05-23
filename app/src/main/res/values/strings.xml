@@ -5,7 +5,17 @@
     <string name="numero_dos">Número dos</string>
     <string name="btncalcular">Calcular</string>
     <string name="btnborrar">Borrar</string>
+    <string name="opcion_sumar">Sumar</string>
+    <string name="opcion_restar">Restar</string>
+    <string name="opcion_multiplicar">Multiplicar</string>
+    <string name="opcion_dividir">Dividir</string>
+    <string-array name="operaciones">
+        <item>@string/opcion_sumar</item>
+        <item>@string/opcion_restar</item>
+        <item>@string/opcion_multiplicar</item>
+        <item>@string/opcion_dividir</item>
+    </string-array>
     <string name="error_numero_uno">Digite número uno</string>
     <string name="error_numero_dos">Digite numero dos</string>
-
+    <string name="error_division">No puede dividir por 0</string>
 </resources>

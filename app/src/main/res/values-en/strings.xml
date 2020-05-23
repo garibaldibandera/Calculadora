@@ -4,6 +4,14 @@
     <string name="titulo">CALCULATOR</string>
     <string name="numero_uno">Number One</string>
     <string name="numero_dos">Nomber Two</string>
-    <string name="btncalcular">Clculate</string>
+    <string name="btncalcular">Calculate</string>
     <string name="btnborrar">Clear</string>
+    <string name="error_numero_uno">Type number one</string>
+    <string name="error_numero_dos">Type number two</string>
+    <string name="opcion_sumar">Add</string>
+    <string name="opcion_restar">Subtraction</string>
+    <string name="opcion_multiplicar">Multiplication</string>
+    <string name="opcion_dividir">Division</string>
+    <string name="error_division">Can\'t divide by 0</string>
+
 </resources>

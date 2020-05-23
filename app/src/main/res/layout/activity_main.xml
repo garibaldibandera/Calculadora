@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="CALCULADORA"
+        android:text="@string/titulo"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp" />
 
     <EditText
@@ -22,7 +23,8 @@
         android:autoText="false"
         android:ems="10"
         android:hint="Número Uno"
-        android:inputType="number" />
+        android:inputType="number"
+        tools:text="@string/numero_uno" />
 
     <EditText
         android:id="@+id/txtNumeroDos"
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Número Dos"
-        android:inputType="number" />
+        android:inputType="number"
+        tools:text="@string/numero_dos" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,14 +46,16 @@
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:onClick="Calcular"
-            android:text="Calcular" />
+            android:text="Calcular"
+            tools:text="@string/btncalcular" />
 
         <Button
             android:id="@+id/btnBorrar"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:onClick="aux_limpiar"
-            android:text="Borrar" />
+            android:text="Borrar"
+            tools:text="@string/btnborrar" />
     </LinearLayout>
 
     <TextView

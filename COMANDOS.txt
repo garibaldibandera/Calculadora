@@ -1,0 +1,238 @@
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git log
+commit d45d06a1df835e5557b17e4cf5b574693b1dc69d (HEAD -> desarrollo, origin/desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:15:10 2020 -0500
+
+    Mensajes al usuario
+
+commit 6f500e00c4a5fb3fa2f0d13193b4779ea668a500
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Fri May 22 01:17:41 2020 -0500
+
+    Validaciones realizadas
+
+commit 7b9d7819f560eb52264cb95fc41acf26fe86da4f
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:44:56 2020 -0500
+
+    Interfaz Terminada
+
+commit 594df34fa063088e65acba30f30edb78c1afbc49 (origin/master, master)
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:16:50 2020 -0500
+
+    archivos iniciales
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git add .
+warning: adding embedded git repository: Calculadora
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Calculadora
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Calculadora
+hint:
+hint: See "git help submodule" for more information.
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git add .
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git commit -m "interfaz ajustada"
+[desarrollo 4696042] interfaz ajustada
+ Committer: Jose Bandera <jbandera@Defensoria.gov.co>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 20 insertions(+), 11 deletions(-)
+ create mode 160000 Calculadora
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git log
+commit 469604210ac8cbdff0a81116f481855c0da735a7 (HEAD -> desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:37:32 2020 -0500
+
+    interfaz ajustada
+
+commit d45d06a1df835e5557b17e4cf5b574693b1dc69d (origin/desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:15:10 2020 -0500
+
+    Mensajes al usuario
+
+commit 6f500e00c4a5fb3fa2f0d13193b4779ea668a500
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Fri May 22 01:17:41 2020 -0500
+
+    Validaciones realizadas
+
+commit 7b9d7819f560eb52264cb95fc41acf26fe86da4f
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:44:56 2020 -0500
+
+    Interfaz Terminada
+
+commit 594df34fa063088e65acba30f30edb78c1afbc49 (origin/master, master)
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:16:50 2020 -0500
+
+    archivos iniciales
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ push origin desarrollo
+bash: push: command not found
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git push origin desarrollo
+Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 940 bytes | 940.00 KiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To github.com:garibaldibandera/Calculadora.git
+   d45d06a..4696042  desarrollo -> desarrollo
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git log
+commit 469604210ac8cbdff0a81116f481855c0da735a7 (HEAD -> desarrollo, origin/desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:37:32 2020 -0500
+
+    interfaz ajustada
+
+commit d45d06a1df835e5557b17e4cf5b574693b1dc69d
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:15:10 2020 -0500
+
+    Mensajes al usuario
+
+commit 6f500e00c4a5fb3fa2f0d13193b4779ea668a500
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Fri May 22 01:17:41 2020 -0500
+
+    Validaciones realizadas
+
+commit 7b9d7819f560eb52264cb95fc41acf26fe86da4f
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:44:56 2020 -0500
+
+    Interfaz Terminada
+
+commit 594df34fa063088e65acba30f30edb78c1afbc49 (origin/master, master)
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:16:50 2020 -0500
+
+    archivos iniciales
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (desarrollo)
+$ git checkout master
+warning: unable to rmdir 'Calculadora': Directory not empty
+Switched to branch 'master'
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (master)
+$ git merge desarrollo
+Updating 594df34..4696042
+Fast-forward
+ .idea/gradle.xml                                   |  1 +
+ .idea/vcs.xml                                      |  7 ++
+ Calculadora                                        |  1 +
+ .../java/com/example/calculadora/MainActivity.java | 58 +++++++++++++++
+ app/src/main/res/layout/activity_main.xml          | 82 ++++++++++++++++++++--
+ 5 files changed, 142 insertions(+), 7 deletions(-)
+ create mode 100644 .idea/vcs.xml
+ create mode 160000 Calculadora
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (master)
+$ git log
+commit 469604210ac8cbdff0a81116f481855c0da735a7 (HEAD -> master, origin/desarrollo, desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:37:32 2020 -0500
+
+    interfaz ajustada
+
+commit d45d06a1df835e5557b17e4cf5b574693b1dc69d
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:15:10 2020 -0500
+
+    Mensajes al usuario
+
+commit 6f500e00c4a5fb3fa2f0d13193b4779ea668a500
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Fri May 22 01:17:41 2020 -0500
+
+    Validaciones realizadas
+
+commit 7b9d7819f560eb52264cb95fc41acf26fe86da4f
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:44:56 2020 -0500
+
+    Interfaz Terminada
+
+commit 594df34fa063088e65acba30f30edb78c1afbc49 (origin/master)
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:16:50 2020 -0500
+
+    archivos iniciales
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (master)
+$ git push origin master
+Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:garibaldibandera/Calculadora.git
+   594df34..4696042  master -> master
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (master)
+$ git log
+commit 469604210ac8cbdff0a81116f481855c0da735a7 (HEAD -> master, origin/master, origin/desarrollo, desarrollo)
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:37:32 2020 -0500
+
+    interfaz ajustada
+
+commit d45d06a1df835e5557b17e4cf5b574693b1dc69d
+Author: Jose Bandera <jbandera@Defensoria.gov.co>
+Date:   Sat May 23 08:15:10 2020 -0500
+
+    Mensajes al usuario
+
+commit 6f500e00c4a5fb3fa2f0d13193b4779ea668a500
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Fri May 22 01:17:41 2020 -0500
+
+    Validaciones realizadas
+
+commit 7b9d7819f560eb52264cb95fc41acf26fe86da4f
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:44:56 2020 -0500
+
+    Interfaz Terminada
+
+commit 594df34fa063088e65acba30f30edb78c1afbc49
+Author: “Garibaldi <Soporte@Defensoria.gov.co>
+Date:   Sat May 16 16:16:50 2020 -0500
+
+    archivos iniciales
+
+jbandera@GJADM27426 MINGW64 /d/ESPECIALIZACION UNIMAGDALENA/CONSTRUCCION DE SOFTWARE/CALCULADORA (master)
+$

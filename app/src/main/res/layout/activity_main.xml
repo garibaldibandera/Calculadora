@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -19,6 +19,7 @@
         android:id="@+id/txtNumeroUno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autoText="false"
         android:ems="10"
         android:hint="Número Uno"
         android:inputType="number" />
@@ -56,4 +57,23 @@
         android:id="@+id/spOperacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FD0404" />
+
+    <TextView
+        android:id="@+id/txtAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:text="Garibaldi Bandera"
+        android:textColor="#029A0A"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:visibility="visible" />
+
 </LinearLayout>

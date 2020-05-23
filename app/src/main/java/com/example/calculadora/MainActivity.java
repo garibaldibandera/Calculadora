@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText numero_uno, numero_dos;
-    private TextView resultado;
+    private TextView resultado, mensajes;
     private Spinner Operacion;
 
     @Override
@@ -22,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
         numero_uno = findViewById(R.id.txtNumeroUno);
         numero_dos=findViewById(R.id.txtNumeroDos);
         resultado = findViewById(R.id.lblResultado);
+        mensajes = findViewById(R.id.txtMensajes);
         Operacion = findViewById(R.id.spOperacion);
         String [] opciones = {"Sumar","Restar","Multiplicar","Dividir"};
-        ArrayAdapter<String> adaptor = new ArrayAdapter<String>( this, android.R.layout.simple_spinner_item, opciones);
-        Operacion.setAdapter(adaptor);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>( this, android.R.layout.simple_spinner_item, opciones);
+        Operacion.setAdapter(adaptador);
     }
 
     public void Calcular (View v) {
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     String opcion = Operacion.getSelectedItem().toString();
 
     if ((Operador1.length() == 0) || (Operador2.length() == 0)) {
-        resultado.setText("Debe ingresar un valor en ambas celdas");
+        Toast.makeText(this, "DEBE INGRESAR UN VALOR EN AMBAS CELDAS", Toast.LENGTH_LONG).show();
+        //mensajes.setText("DEBE INGRESAR UN VALOR EN AMBAS CELDAS");
     }
     else {
         num_uno = Integer.parseInt(numero_uno.getText().toString());
@@ -54,14 +56,17 @@ public class MainActivity extends AppCompatActivity {
         } else if (num_dos != 0) {
             resultados = num_uno / num_dos;
             resultado.setText("" + resultados);
-        } else
-            Toast.makeText(this, "El divisor debe ser diferente a cero 0.", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "EL DIVISOR DEBE SER DIFERENTE A CERO 0.", Toast.LENGTH_LONG).show();
+            //mensajes.setText("EL DIVISOR DEBE SER DIFERENTE A CERO 0");
+        }
     }
     }
     public void aux_limpiar(View v){
         numero_uno.setText("");
         numero_dos.setText("");
         resultado.setText("");
+        mensajes.setText("");
         numero_uno.requestFocus();
     }
 }
